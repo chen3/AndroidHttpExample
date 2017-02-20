@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WebGet</string>
+    <string name="search">搜索</string>
+    <string name="url_title_hint">网址输入栏</string>
+    <string name="refresh">刷新</string>
+    <string name="return_string">返回</string>
+    <string name="open">打开</string>
+    <string name="copy_url">复制网址</string>
+    <string name="paste_and_goto">粘贴并打开</string>
+    <string name="clear_history">清空所有历史记录</string>
+    <string name="history_records">历史记录</string>
+    <string name="delete">删除</string>
+    <string name="url_invalid">地址格式不正确</string>
+    <string name="params_length_not_is_one">参数长度不为1</string>
+    <string name="receive_content_is_empty">接收内容为空</string>
+    <string name="action_done_label">完成</string>
+</resources>

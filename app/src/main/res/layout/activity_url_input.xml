@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_url_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.qiditu.guet.android.webget.UrlInputActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_url_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_actionbar_size"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_return_input"
+            app:srcCompat="@drawable/return_icon"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/return_string"
+            android:layout_width="@dimen/toolbar_btn_size"
+            android:layout_height="@dimen/toolbar_btn_size"
+            tools:ignore="RtlHardcoded" />
+        <EditText
+            android:id="@+id/url_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:imeActionLabel="@string/action_done_label"
+            android:inputType="textUri" />
+        <ImageButton
+            android:id="@+id/btn_enter"
+            app:srcCompat="@drawable/enter"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/open"
+            android:layout_width="@dimen/toolbar_btn_size"
+            android:layout_height="@dimen/toolbar_btn_size"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/list_item_bg"
+        android:layout_height="25dp">
+
+        <TextView
+            android:id="@+id/copy_url"
+            android:textSize="14.0sp"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:text="@string/copy_url"
+            android:layout_weight="1.0" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="#ffececec"
+            android:layout_width="1.0px"
+            android:layout_height="14.0dip" />
+        <TextView
+            android:id="@+id/paste_goto"
+            android:textSize="14.0sp"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:text="@string/paste_and_goto"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_clear_history"
+            android:layout_gravity="center"
+            android:text="@string/clear_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
